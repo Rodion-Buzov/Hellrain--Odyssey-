@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/C++ Programs/Console Projects/Hellrain! Odyssey!/build",
+  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/main.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain! Odyssey!/main.cpp\"",
+  "file": "D:/C++ Programs/Console Projects/Hellrain! Odyssey!/main.cpp",
+  "output": "CMakeFiles/HellRain.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/C++ Programs/Console Projects/Hellrain! Odyssey!/build",
+  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/functions.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain! Odyssey!/functions.cpp\"",
+  "file": "D:/C++ Programs/Console Projects/Hellrain! Odyssey!/functions.cpp",
+  "output": "CMakeFiles/HellRain.dir/functions.cpp.obj"
+}
+]
