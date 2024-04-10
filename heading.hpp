@@ -5,6 +5,7 @@
 #include <random>
 #include <time.h> 
 #include <cstdlib>
+#include <fstream>
 
 #ifdef _WIN32
 #include <Windows.h>

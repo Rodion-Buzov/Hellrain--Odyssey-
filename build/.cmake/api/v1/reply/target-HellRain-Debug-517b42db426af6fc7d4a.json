@@ -87,10 +87,17 @@
 			]
 		},
 		{
-			"name" : "Header Files",
+			"name" : "",
 			"sourceIndexes" : 
 			[
 				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3
 			]
 		}
 	],
@@ -110,8 +117,13 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "heading.hpp",
+			"path" : "score.txt",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "heading.hpp",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

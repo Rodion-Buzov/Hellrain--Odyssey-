@@ -1,5 +1,43 @@
 #include "heading.hpp"
 
+int Score = 0;
+
+void AddScore() {
+    string NewGameName;
+    string line;
+
+    cout << "Enter name of game (No spaces! This will cause a critical error!): " << endl;
+    cin >> NewGameName;
+
+    cout << "Attention! The file must be open, otherwise the record will not be written!" << endl;
+
+    ofstream ScoreFile("score.txt", ios_base::app);
+
+    if (ScoreFile.is_open()) {
+        line = "Name of game: " + NewGameName + " Score: " + to_string(Score);
+        ScoreFile << line;
+        ScoreFile.close();
+    }
+    else {
+        cout << "Unable to open the file for writing. Error code 1!" << endl;
+    }
+}
+
+void ViewScore() {
+    string line;
+
+    ifstream readFile("score.txt");
+
+    if (readFile.is_open()) {
+        while (getline(readFile, line)) {
+            cout << line << endl;
+        }
+        readFile.close();
+    } else {
+        cout << "Unable to open the file for reading. Error code 1!" << endl;
+    }
+}
+
 int main() {
     cout << "||    ||  ||====  ||     ||     ||====|   ||==||  &&  ||===    ||" << endl; // logo!
     cout << "||    ||  ||      ||     ||     ||    |   ||  ||      ||   =   ||" << endl;
@@ -25,7 +63,8 @@ int main() {
         cout << "(1) Start Game!" << endl;
         cout << "(2) Show Information for Game..." << endl;
         cout << "(3) Credits..." << endl;
-        cout << "(4) Quit." << endl;
+        cout << "(4) View score" << endl;
+        cout << "(5) Quit." << endl;
         cin >> MenuChoice;
 
         if (MenuChoice == 1) {
@@ -104,6 +143,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 3) {
@@ -167,6 +207,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 2) {
@@ -191,6 +232,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 3) {
@@ -254,6 +296,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 2) {
@@ -278,6 +321,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 3) {
@@ -341,6 +385,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 2) {
@@ -365,6 +410,7 @@ int main() {
 
                                 if (player.health <= 0) {
                                     player.death();
+                                    AddScore();
                                     break;
                                 }
                             } else if (GameChoice == 3) {
@@ -411,11 +457,18 @@ int main() {
         }
         else if (MenuChoice == 3) {
             cout << "created by Rodion Buzov (*_*)" << endl;
-        }
+        } 
         else if (MenuChoice == 4) {
+            ViewScore();
+            system("pause");
+        }
+        else if (MenuChoice == 5) {
             cout << "Goodbye!" << endl;
             system("pause");
             break;
+        }
+        else {
+            cout << "Wrong Input!" << endl;
         }
     }
     return 0;
