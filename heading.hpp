@@ -20,7 +20,7 @@ float DefenseCout(int dam, int def);
 class Player {
 public:
     int health = 1000;
-    int defense = 15;
+    int defense = 12;
 
     int NumOfPoisons = 1;
     int NumOfTotems = 1;
@@ -98,9 +98,9 @@ public:
 
 class Dragon : public Monster { // Boss! 
 public:
-    int health = 800;  // dragon is very strong
+    int health = 600;  // dragon is very strong
     int damage = 120;
-    int defense = 18;  
+    int defense = 15;  
     const string name = "Dragon";
     bool IsEnemy = false;
     int gold = 200;

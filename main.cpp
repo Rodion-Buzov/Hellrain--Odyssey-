@@ -109,7 +109,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                skeleton.attack(player);
+
+                                if (skeleton.health > 0) {
+                                    skeleton.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (skeleton.health > 0) {
@@ -134,7 +137,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                skeleton.attack(player);
+                                
+                                if (skeleton.health > 0) {
+                                    skeleton.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (skeleton.health > 0) {
@@ -204,7 +210,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                goblin.attack(player);
+                                
+                                if (goblin.health > 0) {
+                                    goblin.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (goblin.health > 0) {
@@ -229,7 +238,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                goblin.attack(player);
+                                
+                                if (goblin.health > 0) {
+                                    goblin.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (goblin.health > 0) {
@@ -299,7 +311,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                mage.attack(player);
+
+                                if (mage.health > 0) {
+                                    mage.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (mage.health > 0) {
@@ -324,7 +339,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                mage.attack(player);
+
+                                if (mage.health > 0) {
+                                    mage.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (mage.health > 0) {
@@ -394,7 +412,10 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                dragon.attack(player);
+
+                                if (dragon.health > 0) {
+                                    dragon.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (dragon.health > 0) {
@@ -419,11 +440,14 @@ int main() {
                                 #else
                                 usleep(3000);
                                 #endif
-                                dragon.attack(player);
+
+                                if (dragon.health > 0) {
+                                    dragon.attack(player);
+                                }
 
                                 cout << "Player heath: " << player.health << endl;
                                 if (dragon.health > 0) {
-                                    cout << "Enemy heath: " << goblin.health << endl;
+                                    cout << "Enemy heath: " << dragon.health << endl;
                                 }
 
                                 if (player.health <= 0) {
