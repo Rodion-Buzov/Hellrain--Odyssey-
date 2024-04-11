@@ -145,3 +145,4 @@ public:
 
 void HealPotion(Player &player);
 void HardcoreTotem(Player &player, Sword &sword , Crossbow &crossbow);
+void shop(Player &player, Crossbow &crossbow);

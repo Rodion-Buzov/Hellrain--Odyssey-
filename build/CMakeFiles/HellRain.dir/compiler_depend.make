@@ -55,6 +55,7 @@ CMakeFiles/HellRain.dir/functions.cpp.obj: D:/C++\ Programs/Console\ Projects/He
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/basic_string.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/charconv.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/cxxabi_forced.h \
@@ -62,6 +63,7 @@ CMakeFiles/HellRain.dir/functions.cpp.obj: D:/C++\ Programs/Console\ Projects/He
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/hash_bytes.h \
@@ -128,6 +130,7 @@ CMakeFiles/HellRain.dir/functions.cpp.obj: D:/C++\ Programs/Console\ Projects/He
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/fstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/initializer_list \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iosfwd \
@@ -164,8 +167,10 @@ CMakeFiles/HellRain.dir/functions.cpp.obj: D:/C++\ Programs/Console\ Projects/He
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/typeinfo \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/vector \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -474,6 +479,7 @@ CMakeFiles/HellRain.dir/main.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/basic_string.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/charconv.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/cxxabi_forced.h \
@@ -481,6 +487,7 @@ CMakeFiles/HellRain.dir/main.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/hash_bytes.h \
@@ -547,6 +554,7 @@ CMakeFiles/HellRain.dir/main.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/fstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/initializer_list \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iosfwd \
@@ -583,8 +591,10 @@ CMakeFiles/HellRain.dir/main.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/typeinfo \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/vector \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -906,6 +916,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/prfchiintrin.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx5124fmapsintrin.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fstream.tcc:
+
 D:/C++\ Programs/Console\ Projects/Hellrain!\ Odyssey!/heading.hpp:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx5124vnniwintrin.h:
@@ -1017,6 +1029,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vpopcntdqintrin.h:
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxifmaintrin.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxneconvertintrin.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/codecvt.h:
 
 C:/w64devkit/x86_64-w64-mingw32/include/pshpack2.h:
 
@@ -1226,6 +1240,10 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tuple:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/type_traits.h:
 
+C:/w64devkit/x86_64-w64-mingw32/include/oleauto.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/fstream:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/initializer_list:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ios:
@@ -1308,7 +1326,11 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/typeinfo:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/vector:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
 
 C:/w64devkit/x86_64-w64-mingw32/include/math.h:
 
@@ -1545,8 +1567,6 @@ C:/w64devkit/x86_64-w64-mingw32/include/objbase.h:
 C:/w64devkit/x86_64-w64-mingw32/include/objidl.h:
 
 C:/w64devkit/x86_64-w64-mingw32/include/ole2.h:
-
-C:/w64devkit/x86_64-w64-mingw32/include/oleauto.h:
 
 C:/w64devkit/x86_64-w64-mingw32/include/oleidl.h:
 

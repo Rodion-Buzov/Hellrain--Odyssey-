@@ -1,8 +1,8 @@
 #include "heading.hpp"
 
-int Score = 0;
+int Score = 0; // score
 
-void AddScore() {
+void AddScore() { // add score func
     string NewGameName;
     string line;
 
@@ -23,7 +23,7 @@ void AddScore() {
     }
 }
 
-void ViewScore() {
+void ViewScore() { // view score func
     string line;
 
     ifstream readFile("score.txt");
@@ -55,7 +55,7 @@ int main() {
         Mage mage;
         Dragon dragon;
 
-        int MenuChoice;
+        int MenuChoice; // variables for menu
         int GameChoice;
         int ItemChoice;
 
@@ -93,7 +93,7 @@ int main() {
                             cout << "Enter you choice: " << endl;
                             cout << "(1) Attack with Sword" << endl;
                             cout << "(2) Attack with Crossbow" << endl;
-                            cout << "(3) Use Items" << endl;
+                            cout << "(3) Use Items or go to shop" << endl;
                             cin >> GameChoice;
 
                             if (GameChoice == 1) {
@@ -150,16 +150,22 @@ int main() {
                                 cout << "Enter your choice: " << endl;
                                 cout << "(1) Heal Potion" << endl;
                                 cout << "(2) Hardcore Totem" << endl;
+                                cout << "(3) Go to Shop" << endl;
                                 cin >> ItemChoice;
 
                                 if (ItemChoice == 1) {
                                     HealPotion(player);
-                                } else {
-                                    cout << "Wrong Input!" << endl;
-                                }
-
-                                if (ItemChoice == 2) {
+                                } else if (ItemChoice == 2) {
                                     HardcoreTotem(player,sword,crossbow);
+                                } else if (ItemChoice == 3) {
+                                    srand(time(NULL)); // random generation seed
+                                    int RandShopSpawn = rand() % 3;
+                                    if (RandShopSpawn == 0) {
+                                        cout << "You have entered the shop!" << endl;
+                                        shop(player, crossbow);
+                                    } else {
+                                        cout << "You not need the shop!" << endl;
+                                    }
                                 } else {
                                     cout << "Wrong Input!" << endl;
                                 }
@@ -182,7 +188,7 @@ int main() {
                             cout << "Enter you choice: " << endl;
                             cout << "(1) Attack with Sword" << endl;
                             cout << "(2) Attack with Crossbow" << endl;
-                            cout << "(3) Use Items" << endl;
+                            cout << "(3) Use Items or go to shop" << endl;
                             cin >> GameChoice;
 
                             if (GameChoice == 1) {
@@ -239,16 +245,22 @@ int main() {
                                 cout << "Enter your choice: " << endl;
                                 cout << "(1) Heal Potion" << endl;
                                 cout << "(2) Hardcore Totem" << endl;
+                                cout << "(3) Go to Shop" << endl;
                                 cin >> ItemChoice;
 
                                 if (ItemChoice == 1) {
                                     HealPotion(player);
-                                } else {
-                                    cout << "Wrong Input!" << endl;
-                                }
-
-                                if (ItemChoice == 2) {
+                                } else if (ItemChoice == 2) {
                                     HardcoreTotem(player,sword,crossbow);
+                                } else if (ItemChoice == 3) {
+                                    srand(time(NULL)); // random generation seed
+                                    int RandShopSpawn = rand() % 3;
+                                    if (RandShopSpawn == 0) {
+                                        cout << "You have entered the shop!" << endl;
+                                        shop(player, crossbow);
+                                    } else {
+                                        cout << "You not need the shop!" << endl;
+                                    }
                                 } else {
                                     cout << "Wrong Input!" << endl;
                                 }
@@ -271,7 +283,7 @@ int main() {
                             cout << "Enter you choice: " << endl;
                             cout << "(1) Attack with Sword" << endl;
                             cout << "(2) Attack with Crossbow" << endl;
-                            cout << "(3) Use Items" << endl;
+                            cout << "(3) Use Items or go to shop" << endl;
                             cin >> GameChoice;
 
                             if (GameChoice == 1) {
@@ -328,16 +340,22 @@ int main() {
                                 cout << "Enter your choice: " << endl;
                                 cout << "(1) Heal Potion" << endl;
                                 cout << "(2) Hardcore Totem" << endl;
+                                cout << "(3) Go to Shop" << endl;
                                 cin >> ItemChoice;
 
                                 if (ItemChoice == 1) {
                                     HealPotion(player);
-                                } else {
-                                    cout << "Wrong Input!" << endl;
-                                }
-
-                                if (ItemChoice == 2) {
+                                } else if (ItemChoice == 2) {
                                     HardcoreTotem(player,sword,crossbow);
+                                } else if (ItemChoice == 3) {
+                                    srand(time(NULL)); // random generation seed
+                                    int RandShopSpawn = rand() % 3;
+                                    if (RandShopSpawn == 0) {
+                                        cout << "You have entered the shop!" << endl;
+                                        shop(player, crossbow);
+                                    } else {
+                                        cout << "You not need the shop!" << endl;
+                                    }
                                 } else {
                                     cout << "Wrong Input!" << endl;
                                 }
@@ -360,7 +378,7 @@ int main() {
                             cout << "Enter you choice: " << endl;
                             cout << "(1) Attack with Sword" << endl;
                             cout << "(2) Attack with Crossbow" << endl;
-                            cout << "(3) Use Items" << endl;
+                            cout << "(3) Use Items or go to shop" << endl;
                             cin >> GameChoice;
 
                             if (GameChoice == 1) {
@@ -417,16 +435,22 @@ int main() {
                                 cout << "Enter your choice: " << endl;
                                 cout << "(1) Heal Potion" << endl;
                                 cout << "(2) Hardcore Totem" << endl;
+                                cout << "(3) Go to Shop" << endl;
                                 cin >> ItemChoice;
 
                                 if (ItemChoice == 1) {
                                     HealPotion(player);
-                                } else {
-                                    cout << "Wrong Input!" << endl;
-                                }
-
-                                if (ItemChoice == 2) {
+                                } else if (ItemChoice == 2) {
                                     HardcoreTotem(player,sword,crossbow);
+                                } else if (ItemChoice == 3) {
+                                    srand(time(NULL)); // random generation seed
+                                    int RandShopSpawn = rand() % 3;
+                                    if (RandShopSpawn == 0) {
+                                        cout << "You have entered the shop!" << endl;
+                                        shop(player, crossbow);
+                                    } else {
+                                        cout << "You not need the shop!" << endl;
+                                    }
                                 } else {
                                     cout << "Wrong Input!" << endl;
                                 }

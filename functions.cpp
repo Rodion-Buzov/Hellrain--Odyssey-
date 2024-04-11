@@ -36,3 +36,31 @@ void HardcoreTotem(Player &player, Sword &sword , Crossbow &crossbow) {
         cout << "You've run out of totems!"  << endl;
     }
 }
+
+void shop(Player &player, Crossbow &crossbow) {
+    cout << "Welcome to the shop!" << endl;
+    int choice;
+    cout << "1. Buy a heal potion for 60 gold" << endl;
+    cout << "2. Buy 5 arrows for 40 gold" << endl;
+    cin >> choice;
+
+    if(choice == 1) {
+        if(player.gold >= 60) {
+            player.gold -= 60;
+            cout << "You bought a heal potion!" << endl;
+            player.NumOfPoisons++;
+        } else {
+            cout << "You don't have enough gold!" << endl;
+        }
+    } else if(choice == 2) {
+        if(player.gold >= 40) {
+            player.gold -= 40;
+            cout << "You bought arrows!" << endl;
+            crossbow.arrows += 5;
+        } else {
+            cout << "You don't have enough gold!" << endl;
+        }
+    } else {
+        cout << "Wrong input!" << endl;
+    }
+}
